@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,900');
+
+
+
+/* HTML and Body Styles */
+
+
+
+html{
+    background-color: white;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+/*######################################*/
+/*            Header Styles             */
+/*######################################*/
+
+
+
+a.navicon{
+    display: none;
+}
+
+
+section.banner{
+    position: relative;
+    height: auto;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(0, 90, 167)), to(black));
+    background: linear-gradient(to right, rgb(0, 90, 167), black);
+    padding: 50px;
+    padding-left: 0px;
+    -webkit-box-shadow: -20px 30px 40px -30px black;
+    box-shadow: -20px 30px 40px -30px black;
+    width: 100%;
+}
+
+
+section.banner::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section.imageSection{
+    height: 200px;
+    width: 200px;
+    float: right;
+    
+    
+}
+
+img.mePic{
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    border: 8px solid white;
+    
+}
+
+header h1, header h2{
+    display: block;
+    color: white;
+    text-align: left;
+    text-shadow: -2px 7px 7px #000000;
+}
+
+section.textSection{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+
+
+header::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+/*######################################*/
+/*        Horizontal Nav Styles         */
+/*######################################*/
+
+ul.mainMenu > li{
+    background-color: white;  
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+li.nonCurrentTab{
+    border-bottom: 1px solid black;
+    -webkit-box-shadow: inset 5px 5px 15px 0px #000000;
+    box-shadow: inset 5px 5px 15px 0px #000000;
+}
+
+ul.mainMenu > li:hover{
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 0px 0px black;
+    box-shadow: 0px 0px 0px 0px black;
+    border-bottom: 0px;
+}
+
+ul.mainMenu > li > a{
+    color: black;
+    width: 90%;
+}
+/*######################################*/
+/*            Main Styles               */
+/*######################################*/
+
+main{
+    background-color: white;
+    min-height: 120%;
+    height: auto;
+    padding-bottom: 90px;
+}
+
+
+
+section.panels p{
+    padding: 20px;
+}
+
+h1.pageHeader{
+    color: white;
+    font-size: 2.5em;
+    text-shadow: -2px 3px 5px #000000;
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+
+/*######################################*/
+/*            Footer Styles             */
+/*######################################*/
+
+footer{
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 4px 4px black;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(0, 90, 167)) , to(black));
+    background: linear-gradient(to right, rgb(0, 90, 167) , black);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    padding-left: 50px;
+    border-top: 3px solid gray;
+}
+
+
+
+
+footer > h1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+}
+
+footer > section.footerIcons{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 190px;
+    background: white;
+    border: 2px solid black;
+    -webkit-box-shadow: inset 5px 5px 10px 3px #000000;
+    box-shadow: inset 5px 5px 10px 3px #000000;
+}
+
+footer img{
+    height: 30px;
+    padding: 7px;
+    padding-bottom: 0px;
+}
+
+/*######################################*/
+/*            Media Queries             */
+/*######################################*/
+
+
+@media only screen and (max-width: 480px){
+    
+    a.navicon img{
+        width: 60px;
+    }
+    
+    a.navicon{
+        position: relative;
+        left: 0px;
+        width: 100px;
+        display: block;
+        float: left;
+        background: -webkit-gradient(linear, left top, right top, from(rgb(0, 90, 167)) , to(black));
+        background: linear-gradient(to right, rgb(0, 90, 167) , black);
+        width: 100%;
+    }   
+    
+    nav.horizontalNav ul{
+        display: none;
+    }  
+    
+    a.navicon:hover+ul, nav.horizontalNav ul:hover{
+        display: block;
+    }
+    
+    
+    section#textSection h1, section#textSection h2{
+        clear: both;
+        display: block;
+        float: left;
+    }
+    
+    header h1{
+        font-size: 1.8em;
+    }
+    
+    header h2{
+        font-size: 1em;
+    }
+    
+    section.imageSection{
+        width: 100%;
+        height: 100%;
+    }
+    
+    section.banner{
+        padding: 0px;
+        width: 100%;
+        height: auto;
+    }
+    
+    img.mePic{
+        display: block;
+        border: 0px;
+        border-radius: 0px;
+        width: 100%;
+        height: auto;        
+    }
+    
+    h1.pageHeader{
+        height: 75px;
+        line-height: 75px;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-box-shadow: 2px 2px 30px 1px #000000;
+        box-shadow: 2px 2px 30px 1px #000000;
+        background: -webkit-gradient(linear, right top, left top, from(black), to(rgb(0, 90, 167)));
+        background: linear-gradient(to left, black, rgb(0, 90, 167));
+    }
+}
+
+
+
+@media only screen and (min-width: 481px){
+    
+    
+    
+    ul.mainMenu > li{
+        /* Overflow text on tabs to te left */
+        overflow: hidden;
+        direction: rtl;
+        text-align: center;
+        white-space: nowrap;
+        
+        width: 15%;
+        float: left;
+    }
+    
+    ul.mainMenu > li#contactTab{
+        width: 25%;
+    }
+    
+   
+    
+    
+
+    ul.mainMenu > li:hover{
+        border-bottom: 0px;
+    }
+    
+    nav.horizontalNav > a > img{
+        display: none;
+    }
+    
+    
+    
+    
+    main > h1.pageHeader{
+        font-size: 5em;
+        color: white;
+        -webkit-box-shadow: inset 8px 8px 6px 3px #000000;
+        box-shadow: inset 8px 8px 6px 3px #000000;
+        background: -webkit-gradient(linear, left top, right top, from(rgb(0, 90, 167)), to(rgb(0, 56, 103)));
+        background: linear-gradient(to right, rgb(0, 90, 167), rgb(0, 56, 103));
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+        margin-bottom: 30px;
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

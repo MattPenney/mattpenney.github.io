@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:700,700i');
+
+
+section#resumeContainer{
+    display: block;
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    -webkit-box-shadow: inset 3px 3px 4px 1px #000000;
+    box-shadow: inset 3px 3px 4px 1px #000000;
+    padding: 15px;
+    margin-bottom: 100px;
+    height: auto;
+}
+
+
+section#resumeContainer li, section#resumeContainer p{
+    font-size: 0.6em;
+}
+
+section#resumeContainer li{
+    list-style-position: outside;
+}
+
+section#resumeContainer p{
+    margin-left: 16px;
+    margin: 30px;
+}
+
+
+section#resumeContainer::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1, h2, h3, h4{
+    display: block;
+    text-align: left;
+
+}
+
+section#resumeContainer h1{
+    width: 50%;
+    color: rgb(0, 90, 167); 
+    border-bottom: 1px solid black;
+}
+
+section#resumeContainer h1, 
+section#resumeContainer h2, 
+section#resumeContainer h3,
+section#resumeContainer h4{
+    display: block;
+    margin-left: 15px;
+}
+
+
+
+h2{
+    font-style: oblique;
+    font-size: 0.6em;
+    font-weight: 100;
+    color: black;
+    font-family: 'Arimo', sans-serif;
+}
+
+h3{
+    font-size: 0.6em;
+    text-align: left;
+    padding-left: 5px;
+}
+
+h4{
+    font-size: 0.6em;
+    clear: both;
+    color: darkgray;
+    margin-bottom: 5px;
+}
+
+
+section.experienceItem:nth-of-type(1), section.educationItem:nth-of-type(1){
+    margin-top: 0px;
+}
+
+
+section.experienceItem, section.educationItem{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 480px){
+    
+    section#resumeContainer{
+        width: 100%;
+    }  
+    
+    section#resumeContainer li{
+        margin-left: 25px;
+    }
+    
+    section#resumeContainer h1{
+        margin-top: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    
+    section#resumeContainer h2, 
+    section#resumeContainer h3{
+        font-size: 1.5em;
+    }
+    
+    section#resumeContainer h1{
+        font-size: 2.5em;
+    }
+    
+    section#resumeContainer h2{
+        margin-top: 60px;
+    }
+    
+    section#resumeContainer h4{
+        font-size: 1.2em;
+    }
+    
+    section#resumeContainer li, section#resumeContainer p{
+        font-size: 1.2em;
+        max-width: 80%;
+    }
+    
+    section#resumeContainer li{
+        margin-left: 50px;
+    }
+    
+    section#resumeContainer h1{
+        margin-bottom: 5px;
+        margin-top: 100px;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
